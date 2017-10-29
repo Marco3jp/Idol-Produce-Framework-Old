@@ -1,0 +1,59 @@
+titleStart - ID:0
+  済み
+
+loadProduceHistory - ID:1
+  UIのみ完成
+
+inputProducerName - ID:2
+
+
+inputProductionName - ID:3
+
+
+idleSelect - ID:4
+
+
+yesOrNo(汎用UI)→後ろとかぶる感じのUIにしたいので少し時間かかるかも ID:5
+
+
+todaySchedule - ID:6
+
+
+selectLesson - ID:7
+
+
+selectCommu - ID:8
+
+
+communication(半汎用UI、普通に朝の会話とかでも使う) - ID:9
+
+
+selectChoice(名前は考え中) - ID:10
+
+
+activitieWeek(今週) - ID:11
+
+
+remainingWeek(残り活動週) - ID:12
+  後回し、だいたい上からパクる
+
+status(パーツに分ける？円グラフと好感度とアイドルレベルを分離するか悩み中) - ID:13
+
+
+displayNumberOfFans - ID:14
+
+
+displayIdleRank - ID:15
+
+
+saveProduceHistry - ID:16
+
+
+====================================次回実装
+auditionMain(あの選択肢三つ出るメインの画面背景
+
+auditionAppeal(あの選択肢三つそのもの
+
+auditionOtherIdolCommand(他の人がどう打ったか出るやつ
+
+auditionResult(複数必要？

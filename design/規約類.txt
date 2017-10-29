@@ -1,0 +1,5 @@
+﻿コーディング規約
+	インデントは2文字幅Tab(スペースへの移行も可能にしたい)
+	可能な限りCLASS単語を利用し、更に省略可能なもの(Communication→Comuなど)は省略する。
+	関数についてはチェインケースを使う。(lesson-vocal()、lesson-dance()など)
+	変数はローワーキャメルケースとする(pLevel,idleStatusVocalなど)

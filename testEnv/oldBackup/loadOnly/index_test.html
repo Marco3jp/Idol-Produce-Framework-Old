@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <title>何故かUI作り始めていた現場</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="modeChange_test.js"></script>
+  <script type="text/javascript" src="readProduceHistory.js"></script>
+  <script type="text/javascript" src="readIdolHistory.js"></script>
+  <div class="allmother">
+    <div class="border">
+      <div id="titleStart" style="display: block;">
+        <div class="title">Idol Produce Framework</div>
+        <div class="start" onclick="modeChange(1)">Start!</div>
+        <div class="newProducer" onclick="modeChange(2)">新規はこちら</div>
+      </div>
+
+      <div id="loadHistory">
+
+        <div id="loadProduceHistoryUI">
+          <div id="plzLoad">プロデュースヒストリーを読み込ませてください</div>
+          <form enctype="multipart/form-data" name="produceHistoryForm">
+            <input type="file" name="produceHistory">
+          </form>
+        </div>
+
+        <div id="produceHistorySign">Produce History</div>
+        <div class="produceHistoryBorder">
+          <b>サイト作るの難しいでしょ</b><br>👆わかりみがふかい<br>👆めっちょわかる
+        </div>
+
+      </div>
+
+      <div id="loadIdolHistory">
+        <div id="idolHistorySign">Idol History</div>
+        <div id="pageGuide"></div>
+        <div id="pager">
+          <button type="button" name="prevButton" onclick="readPrevIdol()">prev←</button>
+          <button type="button" name="nextButton" onclick="readNextIdol()">→next</button>
+        </div>
+        <div class="idolHistoryBorder"></div>
+      </div>
+
+
+      <div id="inputProducerName" style="display: none;">
+        <div class="plzWriteName">プロデューサー名を入力してください(15文字以内)</div>
+        <div class="inputProducerNameForm">
+          <input type="text" maxlength="15" name="inputProducerNameForm">
+        </div>
+        <button type="button" onclick="modeChange(3)">次に行く(仮)</button>
+      </div>
+
+      <div id="unimplemented">
+        <div id="idleSelect">
+          idleSelct-アイドル選択
+        </div>
+        <div id="yesOrNo">
+          YesorNo-ありがちなダイアログ
+        </div>
+        <div id="todaySchedule">
+          todaySchedule-本日の予定決めるやつ
+        </div>
+        <div id="selectLesson">
+          plzSelectLesson!-今日のレッスン
+        </div>
+        <div id="selectCommu">
+          selectCommu-コミュ選択
+        </div>
+        <div id="communication">
+          communication-UI設計のやつ
+        </div>
+        <div id="selectChoise">
+          selectChoise-選択肢を選ぶやつ、名前未定
+        </div>
+        <div id="activitieWeek">
+          activitieWeek-今週
+        </div>
+        <div id="remainingWeek">
+          remainingWeek-残り活動週
+        </div>
+        <div id="status">
+          status-ステータス//分割しますか？
+        </div>
+        <div id="displayNumberOfFans">
+          displayNumberOfFans-ファンの人数を表示
+        </div>
+      </div>
+    </div>
+  </div>
+  <button type="button" onclick="unimplementedShow()">未実装リスト</button>
+  <button type="button" onclick="modeChange(0)">タイトルに戻る</button>
+</body>
+</html>

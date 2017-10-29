@@ -1,0 +1,37 @@
+﻿menu() //Title()外における最高位
+	lesson()
+	communication()
+	audition()
+	changeMusic()
+	changeCostume()
+	offDay()
+	
+
+lesson()
+	voiceLesson()
+	poseLesson()
+	lyricLesson()
+	danceLesson()
+	actingLesson()
+	===============
+	
+
+communication()
+	pickupChoices()
+		選択肢(ID)を3つ返す//早くアルゴリズムを考えろ
+	ChooseCommu()
+	
+audition()
+
+changeMusic()
+
+changeCostume()
+
+offDay()
+
+
+直接呼び出さないfunctionなど以下
+idToCommunication()
+	idを引数にしてコミュを呼び出します//いる？
+idToItem()
+	idを引数にしてアイテムを呼び出します(構造体とかになるかな？)//いる？

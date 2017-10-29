@@ -1,0 +1,8 @@
+{
+  "maker":"Marco",
+  "gamename":"IdolProduceFramework",
+  "player":"producer",
+  "idol":{
+    "numberOfIdol":2,"names":["saya","kaya"]
+  }
+}
