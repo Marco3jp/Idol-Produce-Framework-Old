@@ -83,6 +83,11 @@ $(function() {
             }
         } else {
             printFlag = true;
+            if(commuEndFlag===true){
+                $('#displayText').append("<br><br><div style='text-align:right;'>To Be Continue...</div>");
+            }else if(qFlag===true){
+                $('#displayText').append("<br><br><div style='text-align:right;'>Select Choice!</div>");
+            }
         }
     }
 
@@ -90,10 +95,12 @@ $(function() {
         overOneFunctionValue=printSection;
         nextMessage="NODATA";
         qFlag=false;
+
         $("#displayNameBorder").html("");
         $("#displayBorder").html("");
         $("#displayNameBorder").css('display','none');
         $("#displayBorder").css('display','none');
+
         $('#choices').css('display','block');
         for (var i = 0; i < 5; i++) {
             var choiceClean= "#choice"+i;
@@ -148,8 +155,9 @@ $(function() {
                 $('#displayText').html(commuTextArray[textPoint]);
             }
         }else{
+            endFlag=true;
             if(printFlag===true){
-                alert("ここもちょっとおかしいはず");
+                displayNext();
             }else{
                 $('#displayText').html(commuTextArray[textPoint]);
                 if(commuEndFlag===true){
@@ -158,7 +166,6 @@ $(function() {
                     $('#displayText').append("<br><br><div style='text-align:right;'>Select Choice!</div>");
                 }
                 printFlag = true;
-                endFlag = true;
             }
         }
     }
