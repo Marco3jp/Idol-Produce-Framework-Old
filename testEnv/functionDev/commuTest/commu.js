@@ -13,7 +13,6 @@ $(function() {
             var randomId=randomNum(produceHistory.idolData[playingIdolNum].commu.random.length);
             messages=produceHistory.idolData[playingIdolNum].commu.random[randomId];
         }
-        console.log("とんだとんだかもめが(ry")
         toArray("main");
     }
 
@@ -26,9 +25,6 @@ $(function() {
                 i++;
                 nextMessage=messages[printSection][i];
                 qFlag=true;
-                /*
-                このnextMessageに進むコードを書いてないので早く書いてくださいごめんなさい怒らないで
-                */
             }else if(messages[printSection][i]==='END'){
                 commuEndFlag=true;
             }else if(messages[printSection][i]==='NEXT'){
@@ -40,11 +36,8 @@ $(function() {
                 commuTextArray[(i-1)/2]=messages[printSection][i];
             }
         }
-        console.log("そして輝く")
         commuInitial();
     }
-    //多分これで動くはず。
-    //ちょっと[]の使い方が怪しいのでテスト環境作って試してもいいかもしれない
 
     function commuInitial() {
         $('#displayNameBorder').html('<div id="displayName"></div>');
@@ -85,7 +78,7 @@ $(function() {
             printFlag = true;
             if(commuEndFlag===true){
                 $('#displayText').append("<br><br><div style='text-align:right;'>To Be Continue...</div>");
-            }else if(qFlag===true){
+            }else if(endFlag===true && qFlag===true){
                 $('#displayText').append("<br><br><div style='text-align:right;'>Select Choice!</div>");
             }
         }
@@ -129,7 +122,6 @@ $(function() {
         commuPoint+=messages[overOneFunctionValue][2][selectedChoice];
         toArray(nextMessage);
     }
-
 
     //printFlagは表示完了の状態を表す//
     function displayNext() {
