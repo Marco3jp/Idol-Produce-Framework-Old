@@ -9,7 +9,7 @@
   height:50px;
   border-style:solid;
   display:inline-block;
-  top:495px;
+  top:50vh;
 }
 
 #displayName{
@@ -23,7 +23,7 @@
   height:150px;
   border-style:solid;
   display:inline-block;
-  margin-top:500px;
+  margin-top:51vh;
   cursor: pointer;
   -moz-user-select: none;
   -webkit-user-select: none;
