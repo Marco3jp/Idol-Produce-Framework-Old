@@ -1,0 +1,32 @@
+.allmother{
+    text-align:center;
+    position:relative;
+}
+
+#border{
+    text-align:left;
+    border-style:solid;
+    width:800px;
+    height:600px;
+    display:inline-block;
+    margin-top: 5%;
+    position:relative;
+}
+
+#lessonLabel{
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 0;
+    right: 0;
+    font-size: 26px;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+#lessonUI{
+    display: none;
+}
